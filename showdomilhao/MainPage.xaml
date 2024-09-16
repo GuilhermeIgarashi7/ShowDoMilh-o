@@ -11,6 +11,7 @@
             <RowDefinition Height="60"/>
             <RowDefinition Height="60"/>
             <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
             </Grid.RowDefinitions>
     
             <Frame 
@@ -26,23 +27,9 @@
                   LineHeight="1.2"
                   HorizontalOptions="Center"
                   VerticalOptions="Start"
-                  FontSize="20"
-                  FontFamily="CaviarDreams_BoldItalic"/>
+                  FontSize="20"/>
             </Frame>
 
-            <Button x:Name="NextStep"
-                  Text="Próximo"
-                  BackgroundColor="#ffe291"
-                  BorderWidth="1.5"
-                  BorderColor="Black"
-                  Margin="10,5"
-                  TextColor="Black"
-                  FontSize="20"
-                  FontAttributes="Bold"
-                  HeightRequest="50"
-                  CornerRadius="30"
-                  HorizontalOptions="Fill"
-                  Grid.Row="1"/>
 
             <Button x:Name="FirstOption"
                     BackgroundColor="#ffe291"
@@ -53,7 +40,7 @@
                     HeightRequest="50"
                     CornerRadius="15"
                     HorizontalOptions="Fill"
-                    Grid.Row="2"/>
+                    Grid.Row="1"/>
 
             <Button x:Name="SecondOption"
                     BackgroundColor="#ffe291"
@@ -64,7 +51,7 @@
                     HeightRequest="50"
                     CornerRadius="15"
                     HorizontalOptions="Fill"
-                    Grid.Row="3"/>
+                    Grid.Row="2"/>
 
             <Button x:Name="ThirdOption"
                     BackgroundColor="#ffe291"
@@ -75,7 +62,29 @@
                     HeightRequest="50"
                     CornerRadius="15"
                     HorizontalOptions="Fill"
+                    Grid.Row="3"/>
+
+            <Button x:Name="FourthOption"
+                    BackgroundColor="#ffe291"
+                    Margin="5"
+                    TextColor="Black"
+                    BorderColor="Black"
+                    BorderWidth="1.5"
+                    HeightRequest="50"
+                    CornerRadius="15"
+                    HorizontalOptions="Fill"
                     Grid.Row="4"/>
+
+            <Button x:Name="FifthOption"
+                    BackgroundColor="#ffe291"
+                    Margin="5"
+                    TextColor="Black"
+                    BorderColor="Black"
+                    BorderWidth="1.5"
+                    HeightRequest="50"
+                    CornerRadius="15"
+                    HorizontalOptions="Fill"
+                    Grid.Row="5"/>
 
 
  
