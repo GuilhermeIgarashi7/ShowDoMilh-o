@@ -21,10 +21,6 @@ namespace Modelos
 
         public int CorrectResponse = 0;
 
-
-
-        //----------------------------------------------------------------------------------------------
-
         private Label labelPergunta;
 
         private Button button01;
@@ -37,7 +33,23 @@ namespace Modelos
 
         private Button button05;
 
+
+
+
+        //----------------------------------------------------------------------------------------------
+
+
         public Question(Label LabelQuestion, Button FirstButtonC, Button SecondButtonC, Button ThirdButtonC, Button FourthButtonC, Button FifthButtonC)
+        {
+            labelPergunta = LabelQuestion;
+            button01 = FirstButtonC;
+            button02 = SecondButtonC;
+            button03 = ThirdButtonC;
+            button04 = FourthButtonC;
+            button05 = FifthButtonC;
+        }
+
+        public void ConfigDrawn(Label LabelQuestion, Button FirstButtonC, Button SecondButtonC, Button ThirdButtonC, Button FourthButtonC, Button FifthButtonC)
         {
             labelPergunta = LabelQuestion;
             button01 = FirstButtonC;
@@ -57,35 +69,30 @@ namespace Modelos
             button05.Text = FifthResponse;
         }
 
-        private Button QualBnt(int CR)
+
+        private Button QualBtn(int RR)
         {
-            if (CR == 1)
-            {
-                return button01;
-            }
-            else if (CR == 2)
-            {
-                return button02;
-            }
+            if (CR == respostaRespondida)
         }
 
-        public bool VerifyResponse(int CR)
-        {
-            if  (CR == CorrectResponse)
-            {
-                var Btn = QualBnt(CR);
-                    Btn = BackgroundColor = Color.Green;
-            }
-            else
-            {
-                return  false;
-            }
-        }
+       public bool VerificarSeEstaCorreta(int RR )
+                {
+                if (respostaRespondida == RR)
+                    { 
+                        var buttonResposta01 = QualBTN(int RR)
+                    }
+                    else 
+                    {
+                        return false;
+                    }
+                }
+
+        
+
+    
+
 
     }
-
-
-
 
 
 
