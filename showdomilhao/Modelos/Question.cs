@@ -33,6 +33,10 @@ namespace Modelos
 
         private Button button05;
 
+        public Question()
+        {
+
+        }
 
 
 
@@ -69,27 +73,39 @@ namespace Modelos
             button05.Text = FifthResponse;
         }
 
-
-        private Button QualBtn(int RR)
+        private Button QualBNT (int RespostaSelected)
         {
-            if (CR == respostaRespondida)
+            if (RespostaSelected == 1 )
+            return button01;
+            else if (RespostaSelected == 2)
+            return button02;
+            else if (RespostaSelected == 3)
+            return button03;
+            else if (RespostaSelected == 4)
+            return button04;
+            else 
+            return button05;
         }
 
-       public bool VerificarSeEstaCorreta(int RR )
-                {
-                if (respostaRespondida == RR)
-                    { 
-                        var buttonResposta01 = QualBTN(int RR)
-                    }
-                    else 
-                    {
-                        return false;
-                    }
-                }
+        public bool VerifyResponse(int RespostaSelected)
+        {
+            if (RespostaSelected == CorrectResponse)
+            {
+                var Verify = QualBNT(RespostaSelected);
+                    Verify.BackgroundColor = Colors.Green;
+                return true;
+            }
+            else
+            {
+                var VCorrect = QualBNT(CorrectResponse);
+                var VIncorrect = QualBNT(RespostaSelected);
+                VCorrect.BackgroundColor = Colors.Yellow;
+                VIncorrect.BackgroundColor = Colors.Red;
+                return false;
+                
+            }
+        }
 
-        
-
-    
 
 
     }
