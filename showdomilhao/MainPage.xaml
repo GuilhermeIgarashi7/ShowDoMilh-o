@@ -12,14 +12,22 @@
             <RowDefinition Height="60"/>
             <RowDefinition Height="60"/>
             <RowDefinition Height="60"/>
-            </Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+             <ColumnDefinition Width ="70"/>
+             <ColumnDefinition Width ="70"/>
+             <ColumnDefinition Width ="*"/>
+        </Grid.ColumnDefinitions>
     
             <Frame 
                   BackgroundColor="#ffe291" 
                   CornerRadius="30"
                   Margin="5,10,5,0"
                   VerticalOptions="Fill"
-                  Grid.Row="0">
+                  Grid.Row="0"
+                  Grid.ColumnSpan="4">
             
             <Label   
                   x:Name="labelTexto"
@@ -27,7 +35,8 @@
                   LineHeight="1.2"
                   HorizontalOptions="Center"
                   VerticalOptions="Start"
-                  FontSize="20"/>
+                  FontSize="20"
+                  Grid.ColumnSpan="3"/>
             </Frame>
 
 
@@ -40,7 +49,8 @@
                     HeightRequest="50"
                     CornerRadius="15"
                     HorizontalOptions="Fill"
-                    Grid.Row="1"/>
+                    Grid.Row="1"
+                    Grid.ColumnSpan="3"/>
 
             <Button x:Name="SecondOption"
                     BackgroundColor="#ffe291"
@@ -51,7 +61,8 @@
                     HeightRequest="50"
                     CornerRadius="15"
                     HorizontalOptions="Fill"
-                    Grid.Row="2"/>
+                    Grid.Row="2"
+                    Grid.ColumnSpan="3"/>
 
             <Button x:Name="ThirdOption"
                     BackgroundColor="#ffe291"
@@ -62,7 +73,8 @@
                     HeightRequest="50"
                     CornerRadius="15"
                     HorizontalOptions="Fill"
-                    Grid.Row="3"/>
+                    Grid.Row="3"
+                    Grid.ColumnSpan="3"/>
 
             <Button x:Name="FourthOption"
                     BackgroundColor="#ffe291"
@@ -73,7 +85,8 @@
                     HeightRequest="50"
                     CornerRadius="15"
                     HorizontalOptions="Fill"
-                    Grid.Row="4"/>
+                    Grid.Row="4"
+                    Grid.ColumnSpan="3"/>
 
             <Button x:Name="FifthOption"
                     BackgroundColor="#ffe291"
@@ -84,7 +97,21 @@
                     HeightRequest="50"
                     CornerRadius="15"
                     HorizontalOptions="Fill"
-                    Grid.Row="5"/>
+                    Grid.Row="5"
+                    Grid.ColumnSpan="3"/>
+
+            <Button x:Name="EndButton1"
+                    BackgroundColor="#ffe291"
+                    Margin="5"
+                    TextColor="Black"
+                    BorderColor="Black"
+                    BorderWidth="1.5"
+                    HeightRequest="70"
+                    CornerRadius="15"
+                    HorizontalOptions="Fill"
+                    Grid.Row="6"
+                    Grid.ColumnSpan="3"/>
+
 
 
  
