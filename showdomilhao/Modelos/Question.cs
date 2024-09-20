@@ -33,17 +33,23 @@ namespace Modelos
 
         private Button button05;
 
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
         public Question()
         {
 
         }
 
 
+        public Question(string questionM)
+        {
+            this.QuestionM = questionM; 
+        }
 
-        //----------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-        public Question(Label LabelQuestion, Button FirstButtonC, Button SecondButtonC, Button ThirdButtonC, Button FourthButtonC, Button FifthButtonC)
+        public Question(Label LabelQuestion, Button FirstButtonC, Button SecondButtonC, Button ThirdButtonC, Button FourthButtonC, Button FifthButtonC, int questionM)
         {
             labelPergunta = LabelQuestion;
             button01 = FirstButtonC;
@@ -58,7 +64,7 @@ namespace Modelos
             labelPergunta = LabelQuestion;
             button01 = FirstButtonC;
             button02 = SecondButtonC;
-            button03 = ThirdButtonC;    
+            button03 = ThirdButtonC;
             button04 = FourthButtonC;
             button05 = FifthButtonC;
         }
