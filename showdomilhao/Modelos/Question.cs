@@ -58,7 +58,7 @@ namespace Modelos
             labelPergunta = LabelQuestion;
             button01 = FirstButtonC;
             button02 = SecondButtonC;
-            button03 = ThirdButtonC;
+            button03 = ThirdButtonC;    
             button04 = FourthButtonC;
             button05 = FifthButtonC;
         }
