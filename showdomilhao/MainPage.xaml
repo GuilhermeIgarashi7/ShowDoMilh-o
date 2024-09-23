@@ -31,7 +31,7 @@
                   Grid.ColumnSpan="4">
             
             <Label   
-                  x:Name="labelTexto"
+                  x:Name="labelPergunta"
                   TextColor="Black"
                   LineHeight="1.2"
                   HorizontalOptions="Center"
@@ -41,7 +41,7 @@
             </Frame>
 
 
-            <Button x:Name="FirstOption"
+            <Button x:Name="button01"
                     BackgroundColor="#ffe291"
                     Margin="5"
                     TextColor="Black"
@@ -53,7 +53,7 @@
                     Grid.Row="2"
                     Grid.ColumnSpan="3"/>
 
-            <Button x:Name="SecondOption"
+            <Button x:Name="button02"
                     BackgroundColor="#ffe291"
                     Margin="5"
                     TextColor="Black"
@@ -65,7 +65,7 @@
                     Grid.Row="3"
                     Grid.ColumnSpan="3"/>
 
-            <Button x:Name="ThirdOption"
+            <Button x:Name="button03"
                     BackgroundColor="#ffe291"
                     Margin="5"
                     TextColor="Black"
@@ -77,7 +77,7 @@
                     Grid.Row="4"
                     Grid.ColumnSpan="3"/>
 
-            <Button x:Name="FourthOption"
+            <Button x:Name="button04"
                     BackgroundColor="#ffe291"
                     Margin="5"
                     TextColor="Black"
@@ -89,7 +89,7 @@
                     Grid.Row="5"
                     Grid.ColumnSpan="3"/>
 
-            <Button x:Name="FifthOption"
+            <Button x:Name="button05"
                     BackgroundColor="#ffe291"
                     Margin="5"
                     TextColor="Black"

@@ -21,17 +21,19 @@ namespace Modelos
 
         public int CorrectResponse = 0;
 
-        private Label labelPergunta;
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-        private Button button01;
+        private Label? labelPergunta;
 
-        private Button button02;
+        private Button? button01;
 
-        private Button button03;
+        private Button? button02;
 
-        private Button button04;
+        private Button? button03;
 
-        private Button button05;
+        private Button? button04;
+
+        private Button? button05;
 
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
