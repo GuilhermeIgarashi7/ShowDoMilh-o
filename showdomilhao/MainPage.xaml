@@ -21,6 +21,12 @@
              <ColumnDefinition Width ="*"/>
              <ColumnDefinition Width ="*"/>
         </Grid.ColumnDefinitions>
+
+        <Image Grid.Row="0" 
+               Grid.ColumnSpan="3" 
+               Source="owl.jpg" 
+               Aspect="AspectFill"/>
+
     
             <Frame 
                   BackgroundColor="#ffe291" 
