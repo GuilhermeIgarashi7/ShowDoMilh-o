@@ -11,22 +11,27 @@ namespace Modelos
 
         private int CurrentlyLevel = 0;
 
-        private void Inicializar()
-        {
-            Point = 0;
-            CurrentlyLevel = 1;
-            listQuestionRespondida.Clear();
-            NextQuestion();
-        }
-        
-
+    
 
 //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------   
+    public Gerenciador()
+    {
+
+    }
     public Gerenciador(Label LabelQuestion, Button FirstButtonC, Button SecondButtonC, Button ThirdButtonC, Button FourthButtonC, Button FifthButtonC)
     {
         CreatePerguntas(LabelQuestion, FirstButtonC, SecondButtonC, ThirdButtonC, FourthButtonC,  FifthButtonC);  
     }
+    
 
+
+       private void Inicializar()
+        {
+            Point = 0;
+            CurrentlyLevel = 1;
+            NextQuestion();
+        }
+        
 //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
     public void NextQuestion()

@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="showdomilhao.MainPage"
-             Shell.NavBarIsVisible="False">
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="#014bae">
 
     <Grid>
       <Grid.RowDefinitions>
@@ -29,7 +30,7 @@
 
     
             <Frame 
-                  BackgroundColor="#ffe291" 
+                  BackgroundColor="#41b3d5" 
                   CornerRadius="30"
                   Margin="5,10,5,0"
                   VerticalOptions="Fill"
@@ -48,7 +49,7 @@
 
 
             <Button x:Name="button01"
-                    BackgroundColor="#ffe291"
+                    BackgroundColor="#773babd3"
                     Margin="5"
                     TextColor="Black"
                     BorderColor="Black"
@@ -57,10 +58,11 @@
                     CornerRadius="15"
                     HorizontalOptions="Fill"
                     Grid.Row="2"
-                    Grid.ColumnSpan="3"/>
+                    Grid.ColumnSpan="3"
+                    Clicked="button01ResponseClicked"/>
 
             <Button x:Name="button02"
-                    BackgroundColor="#ffe291"
+                    BackgroundColor="#773babd3"
                     Margin="5"
                     TextColor="Black"
                     BorderColor="Black"
@@ -69,10 +71,11 @@
                     CornerRadius="15"
                     HorizontalOptions="Fill"
                     Grid.Row="3"
-                    Grid.ColumnSpan="3"/>
+                    Grid.ColumnSpan="3"
+                    Clicked="button02ResponseClicked"/>
 
             <Button x:Name="button03"
-                    BackgroundColor="#ffe291"
+                    BackgroundColor="#773babd3"
                     Margin="5"
                     TextColor="Black"
                     BorderColor="Black"
@@ -81,10 +84,11 @@
                     CornerRadius="15"
                     HorizontalOptions="Fill"
                     Grid.Row="4"
-                    Grid.ColumnSpan="3"/>
+                    Grid.ColumnSpan="3"
+                    Clicked="button03ResponseClicked"/>
 
             <Button x:Name="button04"
-                    BackgroundColor="#ffe291"
+                    BackgroundColor="#773babd3"
                     Margin="5"
                     TextColor="Black"
                     BorderColor="Black"
@@ -93,10 +97,11 @@
                     CornerRadius="15"
                     HorizontalOptions="Fill"
                     Grid.Row="5"
-                    Grid.ColumnSpan="3"/>
+                    Grid.ColumnSpan="3"
+                    Clicked="button04ResponseClicked"/>
 
             <Button x:Name="button05"
-                    BackgroundColor="#ffe291"
+                    BackgroundColor="#773babd3"
                     Margin="5"
                     TextColor="Black"
                     BorderColor="Black"
@@ -105,10 +110,11 @@
                     CornerRadius="15"
                     HorizontalOptions="Fill"
                     Grid.Row="6"
-                    Grid.ColumnSpan="3"/>
+                    Grid.ColumnSpan="3"
+                    Clicked="button05ResponseClicked"/>
 
             <Button x:Name="EndButton1"
-                    BackgroundColor="#ffe291"
+                    BackgroundColor="#773babd3"
                     Margin="5"
                     TextColor="Black"
                     BorderColor="Black"
@@ -121,7 +127,7 @@
                     Grid.Column="0"/>
 
             <Button x:Name="EndButton2"
-                    BackgroundColor="#ffe291"
+                    BackgroundColor="#773babd3"
                     Margin="5"
                     TextColor="Black"
                     BorderColor="Black"
@@ -134,7 +140,7 @@
                     Grid.Column="1"/>
 
             <Button x:Name="EndButton3"
-                    BackgroundColor="#ffe291"
+                    BackgroundColor="#773babd3"
                     Margin="5"
                     TextColor="Black"
                     BorderColor="Black"
