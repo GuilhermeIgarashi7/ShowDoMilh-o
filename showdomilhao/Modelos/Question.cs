@@ -95,27 +95,42 @@ namespace Modelos
             return button05;
         }
 
-        public bool VerifyResponse(int RespostaSelected)
+
+
+        public bool VerifyResponse(int resposta)
         {
-            if (RespostaSelected == CorrectResponse)
+            if (CorrectResponse  == resposta)
             {
-                var Verify = QualBNT(RespostaSelected);
-                    Verify.BackgroundColor = Colors.Green;
-                return true;
+            DrawnCorrect(resposta);
+            return true;
             }
             else
             {
-                var VCorrect = QualBNT(CorrectResponse);
-                var VIncorrect = QualBNT(RespostaSelected);
-                VCorrect.BackgroundColor = Colors.Yellow;
-                VIncorrect.BackgroundColor = Colors.Red;
-                return false;
-                
+            return false;
             }
         }
 
+        private void DrawnCorrect(int resposta)
+        {
+            var button = QualBNT(resposta);
+            DesenhaButtonCorreto(button!);
+        }
 
 
+        private void DesenhaButtonCorreto(Button button)
+        {
+            button.BackgroundColor = Colors.Green;
+            button.TextColor = Colors.White;
+        }
+
+        private void DesenhaButtonIncorreto(Button buttonCorreto, Button buttonResposta)
+        {
+            buttonCorreto.BackgroundColor = Colors.Yellow;
+            buttonCorreto.TextColor       = Colors.White;
+
+            buttonResposta.BackgroundColor = Colors.Red;
+            buttonResposta.TextColor       = Colors.White;
+        }
     }
 
 
