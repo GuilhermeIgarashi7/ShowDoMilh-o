@@ -39,7 +39,7 @@ public partial class MainPage : ContentPage
 		gerenciador!.Verify(5);
 	}
 
-
+//
 
 
 
