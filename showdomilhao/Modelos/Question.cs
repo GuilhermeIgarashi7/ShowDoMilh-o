@@ -79,6 +79,17 @@ namespace Modelos
             button03.Text = ThirdResponse;
             button04.Text = FourthResponse;
             button05.Text = FifthResponse;
+
+            this.button01!.BackgroundColor = Color.FromArgb("#773babd3");
+            this.button01!.TextColor       = Colors.White;
+            this.button02!.BackgroundColor = Color.FromArgb("#773babd3");
+            this.button02!.TextColor       = Colors.White;
+            this.button03!.BackgroundColor = Color.FromArgb("#773babd3");
+            this.button03!.TextColor       = Colors.White;
+            this.button04!.BackgroundColor = Color.FromArgb("#773babd3");
+            this.button04!.TextColor       = Colors.White;
+            this.button05!.BackgroundColor = Color.FromArgb("#773babd3");
+            this.button05!.TextColor       = Colors.White;
         }
 
         private Button QualBNT (int RespostaSelected)
@@ -91,8 +102,10 @@ namespace Modelos
             return button03;
             else if (RespostaSelected == 4)
             return button04;
-            else 
+            else if(RespostaSelected == 5)
             return button05;
+            else 
+            return null;
         }
 
 
@@ -106,6 +119,7 @@ namespace Modelos
             }
             else
             {
+            DrawnIncorrect(resposta);
             return false;
             }
         }
@@ -114,6 +128,13 @@ namespace Modelos
         {
             var button = QualBNT(resposta);
             DesenhaButtonCorreto(button!);
+        }
+
+        private void DrawnIncorrect(int resposta)
+        {
+            var buttonCorreto = QualBNT(CorrectResponse);
+            var buttonResposta = QualBNT(resposta);
+            DesenhaButtonIncorreto(buttonCorreto!, buttonResposta!);
         }
 
 
@@ -126,10 +147,10 @@ namespace Modelos
         private void DesenhaButtonIncorreto(Button buttonCorreto, Button buttonResposta)
         {
             buttonCorreto.BackgroundColor = Colors.Yellow;
-            buttonCorreto.TextColor       = Colors.White;
+            buttonCorreto.TextColor       = Colors.Black;
 
             buttonResposta.BackgroundColor = Colors.Red;
-            buttonResposta.TextColor       = Colors.White;
+            buttonResposta.TextColor       = Colors.Black;
         }
     }
 
