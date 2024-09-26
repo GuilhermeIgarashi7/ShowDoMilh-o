@@ -1,3 +1,5 @@
+using showdomilhao;
+
 namespace Modelos
 {
     public class Gerenciador
@@ -11,6 +13,11 @@ namespace Modelos
 
         private int CurrentlyLevel = 0;
 
+        private Label? LabelPoints;
+
+        private Label? LabelLvl;
+
+
     
 
 //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------   
@@ -18,9 +25,12 @@ namespace Modelos
     {
 
     }
-    public Gerenciador(Label LabelQuestion, Button FirstButtonC, Button SecondButtonC, Button ThirdButtonC, Button FourthButtonC, Button FifthButtonC)
+    public Gerenciador(Label LabelQuestion, Button FirstButtonC, Button SecondButtonC, Button ThirdButtonC, Button FourthButtonC, Button FifthButtonC, Label labelPoints, Label labelLvl)
     {
+        this.LabelPoints = labelPoints;
+        this.LabelLvl = labelLvl;
         CreatePerguntas(LabelQuestion, FirstButtonC, SecondButtonC, ThirdButtonC, FourthButtonC,  FifthButtonC);  
+        
     }
     
 
@@ -30,6 +40,9 @@ namespace Modelos
             Point = 0;
             CurrentlyLevel = 1;
             NextQuestion();
+            LabelPoints.Text = "Pontos:" + Point.ToString();
+            LabelLvl.Text = "Nível:" + CurrentlyLevel.ToString();
+
         }
         
 //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -51,12 +64,25 @@ namespace Modelos
     {
         if (QuestaoCorrente!.VerifyResponse(resposta))
         {
-        await Task.Delay(1500);
+        await Task.Delay(1000);
         AddPoints (CurrentlyLevel);
         CurrentlyLevel ++;
         NextQuestion();
+
+            if (CurrentlyLevel == 10)
+                {
+                    return;
+                }
+                else
+                {
+                    CurrentlyLevel++;
+                    NextQuestion(); // Avança para a próxima pergunta
+                }
         }
     }
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -104,6 +130,8 @@ namespace Modelos
         }
     }
 
+
+
 //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
     public void AddQuestion(Question questao)
@@ -121,7 +149,8 @@ namespace Modelos
             P1.ThirdResponse = "Anta Gorda";
             P1.FourthResponse = "Graxa";
             P1.FifthResponse = "Xique-Xique";
-            P1.CorrectResponse = 1;  
+            P1.CorrectResponse = 1;
+            P1.QuestionLevel=1;  
             AddQuestion(P1);
 
             var P2 = new Question();

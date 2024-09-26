@@ -49,8 +49,8 @@
             </Frame>
 
                 <Label
-                    x:Name="LabelPoints"
-                    Text="Pontos:0"
+                    x:Name="labelPoints"
+                    Text="Pontos:"
                     Margin="10,20,0,0"
                     TextColor="Black"
                     FontSize="15"
@@ -59,7 +59,7 @@
                     />
                             
                     <Label
-                    x:Name="LabelLvl"
+                    x:Name="labelLvl"
                     Text="Nivel:0"
                     Margin="0,10,20,0"
                     TextColor="Black"

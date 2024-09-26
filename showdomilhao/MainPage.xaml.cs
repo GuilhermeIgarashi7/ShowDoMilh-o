@@ -10,7 +10,7 @@ public partial class MainPage : ContentPage
 	{
 		InitializeComponent();    
 
-		gerenciador = new Gerenciador(labelPergunta, button01, button02, button03, button04, button05);
+		gerenciador = new Gerenciador(labelPergunta, button01, button02, button03, button04, button05, labelPoints, labelLvl);
 		gerenciador.NextQuestion();
 	}
 

@@ -27,7 +27,7 @@ namespace Modelos
 
         private Button? button01;
 
-        private Button? button02;
+        private Button? button02;   /// ? significa que pode ser nulo
 
         private Button? button03;
 
