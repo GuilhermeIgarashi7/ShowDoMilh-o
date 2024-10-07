@@ -135,6 +135,7 @@
                     Clicked="button05ResponseClicked"/>
 
             <Button x:Name="EndButton1"
+                    Clicked="OnPularCLicked"
                     BackgroundColor="#773babd3"
                     Margin="5"
                     TextColor="Black"

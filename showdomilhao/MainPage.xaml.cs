@@ -5,6 +5,7 @@ namespace showdomilhao;
 public partial class MainPage : ContentPage
 {
 	public Gerenciador gerenciador;
+	public int QntsClickeds = 0;
 
 	public MainPage()
 	{
@@ -37,6 +38,23 @@ public partial class MainPage : ContentPage
 	private void button05ResponseClicked(object sender,EventArgs e)
 	{
 		gerenciador!.Verify(5);
+	}
+
+	void OnPularCLicked (object s, EventArgs e)
+	{
+		gerenciador.NextQuestion();
+		QntsClickeds ++;
+		if (QntsClickeds < 3)
+		{
+			return;
+		}
+		else
+		{
+			(s as Button).IsVisible = false;
+		}
+
+
+
 	}
 
 //
