@@ -46,7 +46,7 @@ public partial class MainPage : ContentPage
 		QntsClickeds ++;
 		if (QntsClickeds < 3)
 		{
-			return;
+			return null;
 		}
 		else
 		{
