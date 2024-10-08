@@ -134,7 +134,8 @@
                     Grid.ColumnSpan="3"
                     Clicked="button05ResponseClicked"/>
 
-            <Button x:Name="EndButton1"
+            <Button Text="Pular 3x"
+                    x:Name="BotaoPular"
                     Clicked="OnPularCLicked"
                     BackgroundColor="#773babd3"
                     Margin="5"

@@ -44,6 +44,20 @@ public partial class MainPage : ContentPage
 	{
 		gerenciador.NextQuestion();
 		QntsClickeds ++;
+
+		if (QntsClickeds == 0)
+		{
+			BotaoPular.Text = "Pula: 3x";
+		}
+		if (QntsClickeds == 1)
+		{
+			BotaoPular.Text = "Pula: 2x";
+		}
+		if (QntsClickeds == 2)
+		{
+			BotaoPular.Text = "Pula: 1x";
+		}
+
 		if (QntsClickeds < 3)
 		{
 			return;
@@ -54,8 +68,8 @@ public partial class MainPage : ContentPage
 		}
 
 
-
 	}
+    
 
 //
 
